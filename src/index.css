@@ -1,0 +1,92 @@
+.quoted{
+  &-wrapper{
+    position: relative;
+    width: 100%;
+    min-height: 42px;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      left:2px;
+      width: 4px;
+      height: calc(100% - 12px);
+      background-color: rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+    }
+  }
+  &-inner{
+    margin: 0;
+    outline: none;
+    padding-top:8px ;
+    padding-bottom: 8px;
+    height: 100%;
+    position: relative;
+
+    &:not(:focus):empty::before{
+       content: attr(data-placeholder);
+       color : #b3b3b3;
+    }
+  }
+}
+
+
+.cdx-quoted-primary {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.cdx-quoted-secondary {
+  background-color: #f7fafc;
+  color: #222731;
+}
+
+.cdx-quoted-info {
+  background-color: #e6fdff;
+  color: #00727c;
+}
+
+.cdx-quoted-success {
+  background-color: #f0fff4;
+  color: #2f855a;
+}
+
+.cdx-quoted-warning {
+  background-color: #fffaf0;
+  color: #c05621;
+}
+
+.cdx-quoted-danger {
+  background-color: #fff5f5;
+  color: #c53030;
+}
+
+.cdx-quoted-light {
+  background-color: #fff;
+  color: #1a202c;
+}
+
+.cdx-quoted-dark {
+  background-color: #2d3748;
+  color: #d3d3d3;
+}
+
+.cdx-quoted.cdx-settings-button {
+  margin: 3px;
+  width: 28px;
+  height: 28px;
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+.cdx-quoted.cdx-settings-button:hover {
+  opacity: 1;
+}
+
+.cdx-quoted.cdx-settings-button--active,
+.cdx-quoted.cdx-settings__button--focused {
+  font-weight: bold;
+  opacity: 0.9;
+}
