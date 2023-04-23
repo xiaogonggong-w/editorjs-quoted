@@ -1,4 +1,4 @@
-# CodePlus
+# editorjs-quoted
 editorjs-quoted工具是Editor.js的引述文字插件
 # 安装
 ```
